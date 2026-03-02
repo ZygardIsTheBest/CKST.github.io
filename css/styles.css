@@ -1,0 +1,23 @@
+
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#222;background:#f7f8fa}
+#page{max-width:1080px;margin:0 auto;background:#fff}
+.block{padding:1rem 1.25rem}
+#header{border-bottom:1px solid #e3e7ee}
+#nav{list-style:none;margin:.75rem 0 0 0;padding:0;display:flex;gap:.75rem}
+#nav li a{text-decoration:none;color:#0058A3;padding:.4rem .6rem;border-radius:.4rem}
+#nav li.active a,#nav li a:hover{background:#FFDA1A;color:#111}
+#hero{position:relative;display:flex;gap:1rem;align-items:center;min-height:360px;color:#111;background:#eee center/cover no-repeat}
+body.home #hero{background-image:linear-gradient(to right,rgba(255,255,255,.9),rgba(255,255,255,.65),rgba(255,255,255,.3)),url('../images/hero-home.jpg')}
+body.issue #hero{background-image:linear-gradient(to right,rgba(255,255,255,.9),rgba(255,255,255,.65),rgba(255,255,255,.3)),url('../images/hero-issue.jpg')}
+body.solutions #hero{background-image:linear-gradient(to right,rgba(255,255,255,.9),rgba(255,255,255,.65),rgba(255,255,255,.3)),url('../images/hero-solutions.jpg')}
+.hero-copy{max-width:56%}.highlight{background:#FFDA1A;padding:0 .2rem}
+.btn{display:inline-block;background:#0058A3;color:#fff;padding:.6rem .9rem;border-radius:.4rem;text-decoration:none}
+.btn:hover{background:#00407A}.btn.cta{background:#FFDA1A;color:#111;font-weight:bold}
+table.data{width:100%;border-collapse:collapse;margin-top:.5rem}
+table.data th,table.data td{border:1px solid #d9dee8;padding:.5rem .6rem;text-align:left}
+table.data thead th{background:#f5f7fb}
+caption{color:#0058A3;font-weight:bold}
+#contact-form fieldset{border:1px solid #d9dee8;padding:.75rem}
+#contact-form label{display:block;margin-top:.5rem}
+#contact-form input[type="text"],#contact-form select{width:100%;padding:.45rem;border:1px solid #cfd6e4;border-radius:.25rem}
+@media(max-width:720px){#hero{min-height:280px;background-position:center}.hero-copy{max-width:100%}.two-col{flex-direction:column}}
